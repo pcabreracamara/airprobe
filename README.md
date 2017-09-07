@@ -19,7 +19,7 @@ Instructions to install (asuming you already have GNURadio and libosmocore insta
 Sometimes, on step "./make" on gsm-receiver folder, an error exit the compilation process:
 
 <code>make[4]: Entering directory '/opt/airprobe/gsm-receiver/src/lib' /bin/bash ../../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I../..  -I -I -I/usr/local/include/  -I -I/usr/include/python2.7 -g -O1 -Wno-strict-aliasing -Wno-parentheses  -g -O2 -Wall -Woverloaded-virtual -MT _gsm_la-gsm.lo -MD -MP -MF .deps/_gsm_la-gsm.Tpo -c -o _gsm_la-gsm.lo `test -f 'gsm.cc' || echo './'`gsm.cc libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I../.. -I -I -I/usr/local/include/ -I -I/usr/include/python2.7 -g -O1 -Wno-strict-aliasing -Wno-parentheses -g -O2 -Wall -Woverloaded-virtual -MT _gsm_la-gsm.lo -MD -MP -MF .deps/_gsm_la-gsm.Tpo -c gsm.cc  -fPIC -DPIC -o .libs/_gsm_la-gsm.o gsm.cc:154:21: fatal error: Python.h: No such file or directory<br>
- <&#35;>include <Python.h></code>
+ &#35;include <Python.h></code>
 
 <i>compilation terminated.<br>
 Makefile:739: recipe for target '_gsm_la-gsm.lo' failed<br>
