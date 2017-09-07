@@ -1,0 +1,14 @@
+--- gsm-receiver/Makefile.common
++++ gsm-receiver/Makefile.common
+@@ -36,9 +36,8 @@
+ STD_DEFINES_AND_INCLUDES = \
+ 	-I$(DECODER_INCLUDEDIR) \
+ 	-I$(MAIN_INCLUDEDIR) \
+-	-I$(GNURADIO_CORE_INCLUDEDIR) \
+-	-I$(GNURADIO_CORE_INCLUDEDIR)/swig \
+-	-I$(GRUEL_INCLUDEDIR)/gruel/swig \
++	-I$(GNURADIO_RUNTIME_INCLUDEDIR) \
++	-I$(GNURADIO_RUNTIME_INCLUDEDIR)/gnuradio/swig \
+ 	$(LIBOSMOCORE_CFLAGS)  \
+ 	-I$(TCH_DECODER_INCLUDEDIR)
+ 

@@ -1,0 +1,11 @@
+prefix=/usr/local
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib64
+includedir=${prefix}/include
+
+Name: gsm-receiver
+Description: The GSM receiver block which does FCCH burst search, sch decoding and normal burst demodulation
+Requires: gnuradio-core
+Version: 0.0.3
+Libs: -L${libdir} -lgsm-receiver
+Cflags: -I${includedir}

@@ -1,0 +1,12 @@
+--- gsm-receiver/config/gr_standalone.m4
++++ gsm-receiver/config/gr_standalone.m4
+@@ -114,7 +114,6 @@
+   AC_CHECK_PROG([XMLTO],[xmlto],[yes],[])
+   AM_CONDITIONAL([HAS_XMLTO], [test x$XMLTO = xyes])
+ 
+-  PKG_CHECK_MODULES(GNURADIO_CORE, gnuradio-core >= 3)
+-  LIBS="$LIBS $GNURADIO_CORE_LIBS"
+-  PKG_CHECK_MODULES(GRUEL, gruel >= 3)
++  PKG_CHECK_MODULES(GNURADIO_RUNTIME, gnuradio-runtime >= 3.7)
++  LIBS="$LIBS $GNURADIO_RUNTIME_LIBS"
+ ])

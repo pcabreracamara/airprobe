@@ -1,0 +1,6 @@
+GSM610Tables.lo: GSM610Tables.cpp /usr/include/stdc-predef.h \
+ GSM610Tables.h
+
+/usr/include/stdc-predef.h:
+
+GSM610Tables.h:
